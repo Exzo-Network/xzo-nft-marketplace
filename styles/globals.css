@@ -6,15 +6,208 @@
 @tailwind utilities;
 
 .nft-gradient {
-   background: linear-gradient(101.12deg, #2f8af5 27.35%, #2f8af5 99.99%, #2f8af5 100%, #0cebeb 100%);
+   background: linear-gradient(to right bottom, #21212c 100%, #232534 100%, #24293c 100%, #242d44 100%, #23314d 100%, #253a5b 100%, #264369 100%, #264c78 100%, #2a5c90 100%, #2d6daa 100%, #2d7fc4 100%, #2b91de 100%);
 }
 
 .techive-nft-gradient {
-  background: linear-gradient(90deg, #29ffc6 0%, #20e3b2 30%, #0cebeb 100%);
+  background: rgba(85,82,246,1);
+}
+
+.dark {
+    background: linear-gradient(to right bottom, #21212c, #1f202d, #1d202e, #1a1f2e, #171f2f, #172233, #162437, #15273b, #172d43, #19344b, #1a3a54, #1b415c) !important;
 }
 
 .white-bg {
     background: rgba(255, 255, 255, 0.2);
+}
+
+.bg-color {
+    background: #0c0a1d;
+}
+
+.gradient-border {
+    position: relative;
+    border-radius: 25px;
+    z-index: 100;
+  }
+
+.gradient-border::before {
+    background: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+    width: 104%;
+    height: 102%;
+}
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+.logo {
+    list-style-type: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0px;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.nft-card-style {
+    box-sizing: border-box;
+    background: #131521;
+    border: 1px solid rgb(46, 51, 92);
+    box-shadow: rgb(151 164 175 / 10%) 0px 1px 10px;
+    fill-opacity: 0.9;
+    will-change: transform,background;
+    -webkit-transition: -webkit-transform,background 0.3s ease;
+    transition: transform,background 0.3s ease;
+    border-radius: 15px;
+}
+
+.text-bg {
+    background: transparent;
+    border: none;
+}
+
+.creator-card {
+    background: #131521;
+    border: 2px solid rgb(46, 51, 92);
+    border-radius: 15px;
+    box-shadow: rgba(164, 114, 214, 0.137) 0px 3px 10px;
+    animation: spin 2.5s linear infinite;
+}
+
+.glowing-border {
+    background: #131521;
+    border: 1px solid rgb(46, 51, 92);
+    border-radius: 15px;
+    animation: spin 2.5s linear infinite;
+}
+
+.glowing-border:focus { 
+    outline: none;
+}
+
+.banner-bg-color {
+    background: linear-gradient(90deg, rgba(52,42,224,1) 0%, rgba(85,82,246,1) 35%, rgba(0,65,255,1) 100%);
+    border: 1px solid rgb(46, 51, 92);
+    box-shadow: rgb(151 164 175 / 10%) 0px 15px 30px;
+    border-radius: 15px;
+    animation: spin 2.5s linear infinite;
+}
+
+.nav-menu {
+    background: #131521;
+    opacity: 0.7;
+    border-bottom: 1px solid;
+    border-color: rgb(46, 51, 92);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    -webkit-box-align: center;
+    vertical-align: baseline;
+    z-index: 100;
+    transition: background 400ms ease 0s;
+}
+
+
+.box {
+    background: hsl(0, 0%, 100%);
+    padding: 30px 40px;
+    position: flex;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770 );
+    background-size: 300% 300%;
+    animation: animateGlow 1.25s linear infinite;
+}
+  
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+.GradientBorder {
+    position: relative;
+    width: 450px;
+    padding: 40px 0;
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+    background: #020117;
+  }
+  .GradientBorder::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    z-index: -1;
+  }
+  .GradientBorder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    z-index: -2;
+    filter: blur(40px);
+  }
+
+.banner-style {
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+}
+
+.btn-style {
+    background-color: rgba(111, 76, 255, 0.32);
+    border: 1px solid rgba(111, 76, 255, 0.32);
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: color 400ms ease,background-color 400ms ease,border-color 400ms ease,text-decoration-color 400ms ease,fill 400ms ease,stroke 400ms ease,opacity 400ms ease,box-shadow 400ms ease,text-shadow 400ms ease,transform 400ms ease,filter 400ms ease,backdrop-filter 400ms ease;
+}
+
+.btn-style:hover {
+    color: #fff;
+    background-color: rgba(111, 76, 255, 0.48);
+    border-color: rgb(46, 51, 92);
 }
 
 .nav-h {

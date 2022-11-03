@@ -10,11 +10,11 @@
 }
 
 .techive-nft-gradient {
-  background: rgba(85,82,246,1);
+  background: linear-gradient(to right bottom, #2d2657, #262750, #212748, #1f273f, #1f2636, #1e2534, #1d2332, #1c2230, #1a2035, #191e39, #1a1b3c, #1d183f);
 }
 
 .dark {
-    background: linear-gradient(to right bottom, #21212c, #1f202d, #1d202e, #1a1f2e, #171f2f, #172233, #162437, #15273b, #172d43, #19344b, #1a3a54, #1b415c) !important;
+    background: linear-gradient(to right bottom, #2d2657, #262750, #212748, #1f273f, #1f2636, #1e2534, #1d2332, #1c2230, #1a2035, #191e39, #1a1b3c, #1d183f);
 }
 
 .white-bg {
@@ -22,7 +22,7 @@
 }
 
 .bg-color {
-background: linear-gradient(to right bottom, #2d2657, #262750, #212748, #1f273f, #1f2636, #1e2534, #1d2332, #1c2230, #1a2035, #191e39, #1a1b3c, #1d183f);
+   background: linear-gradient(to right bottom, #2d2657, #262750, #212748, #1f273f, #1f2636, #1e2534, #1d2332, #1c2230, #1a2035, #191e39, #1a1b3c, #1d183f);
 }
 
 .gradient-border {

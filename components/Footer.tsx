@@ -12,9 +12,9 @@ type FooterLinksProps = {
 
 const FooterLinks = ({ heading, items }: FooterLinksProps) => (
   <div className="items-start justify-start flex-1">
-    <h3 className="mb-10 text-xl font-semibold font-poppins dark:text-white text-nft-black-1">{heading}</h3>
+    <h3 className="mb-10 text-xl font-semibold font-poppins dark:text-white">{heading}</h3>
     {items.map((item, index) => (
-      <p className="my-3 text-base font-normal cursor-pointer font-poppins dark:text-white text-nft-black-1 dark:hover:text-nft-gray-1 hover:text-nft-black-1" key={index}>{item}</p>
+      <p className="my-3 text-base font-normal cursor-pointer font-poppins dark:text-white dark:hover:text-nft-gray-1" key={index}>{item}</p>
     ))}
   </div>
 );
@@ -28,14 +28,14 @@ const Footer = () => {
         <div className="flex-col flex-1 flexStart">
           <div className="cursor-pointer flexCenter">
             <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" className="rounded-xl" />
-            <p className="ml-1 text-lg font-semibold dark:text-white text-nft-black-1">Kinetix Labs</p>
+            <p className="ml-1 text-lg font-semibold dark:text-white">Exzo Network</p>
           </div>
-          <p className="mt-6 text-base font-semibold font-poppins dark:text-white text-nft-black-1">Get the Latest Updates</p>
-          <div className="mt-6 bg-white rounded-md flexBetween md:w-full minlg:w-557 w-357 dark:bg-nft-black-2 dark:border-nft-black-2 border-nft-gray-2">
+          <p className="mt-6 text-base font-semibold font-poppins dark:text-white">Get the Latest Updates</p>
+          <div className="mt-6  rounded-md flexBetween md:w-full minlg:w-557 w-357 dark:bg-nft-black-2 dark:border-nft-black-2 border-nft-gray-2">
             <input
               type="email"
               placeholder="Your Email"
-              className="flex-1 w-full h-full px-4 text-xs font-normal bg-white rounded-md outline-none dark:bg-nft-black-2 dark:text-white text-nft-black-1 minlg:text-lg"
+              className="flex-1 w-full h-full px-4 text-xs font-normal  rounded-md outline-none dark:bg-nft-black-2 dark:text-white  minlg:text-lg"
             />
             <div className="flex-initial">
               <Button btnName="Email me" classStyles="rounded-md" />
@@ -49,9 +49,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full px-16 mt-5 border-t flexCenter dark:border-nft-black-1 border-nft-gray-1 sm:px-4">
+      <div className="w-full px-16 mt-5 border-t flexCenter dark:border-nft-black-1 sm:px-4">
         <div className="flex-row w-full flexBetween minmd:w-4/5 sm:flex-col mt-7">
-          <p className="text-base font-semibold font-poppins dark:text-white text-nft-black-1">Kinetix Labs, Inc. All Rights Reserved.</p>
+          <p className="text-base font-semibold font-poppins dark:text-white ">Copyright 2023 © Exzo Network All Rights Reserved.</p>
           <div className="flex flex-row sm:mt-4">
             {[images.instagram, images.twitter, images.telegram, images.discord].map((image, index) => (
               <div className="mx-2 cursor-pointer" key={index}>

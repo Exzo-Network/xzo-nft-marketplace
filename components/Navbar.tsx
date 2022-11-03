@@ -119,8 +119,8 @@ const Navbar = () => {
   }, [router.pathname]);
 
   return (
-    <nav className="fixed z-10 flex-row w-full p-4 bg-white border-b flexBetween dark:bg-nft-dark dark:border-nft-black-1 border-nft-gray-1">
-      <div className="flex flex-row justify-start flex-1">
+    <nav className="fixed z-10 flex-row w-full p-4 flexBetween nav-menu">
+      <div className="flex flex-row justify-start flex-1 ">
         <Link href="/">
           <div
             className="cursor-pointer flexCenter md:hidden"
@@ -128,8 +128,8 @@ const Navbar = () => {
               setActive('Explore NFTs');
             }}
           >
-            <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" className="rounded-xl" />
-            <p className="ml-1 text-lg font-semibold dark:text-white text-nft-black-1">Kinetix Labs</p>
+            <Image src={images.logo02} objectFit="contain" width={18} height={18} alt="logo" className="rounded-xl logo" />
+            <p className="ml-1 text-lg font-semibold dark:text-white">Exzo Network</p>
           </div>
         </Link>
         <Link href="/">

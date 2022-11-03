@@ -40,7 +40,7 @@ const SearchBar = ({ activeSelect, setActiveSelect, handleSearch, clearSearch }:
 
   return (
     <>
-      <div className="flex-1 flexCenter dark:bg-nft-black-2 bg-white border dark:border-nft-black-2 border-nft-gray-2 px-4 rounded-md py-3">
+      <div className="flex-1 px-4 py-3 flexCenter glowing-border">
         <Image
           src={images.search}
           objectFit="contain"
@@ -52,13 +52,13 @@ const SearchBar = ({ activeSelect, setActiveSelect, handleSearch, clearSearch }:
         <input
           type="text"
           placeholder="Search NFT here"
-          className="dark:bg-nft-black-2 bg-white mx-4 w-full dark:text-white text-nft-black-1 font-normal text-xs outline-none"
+          className="w-full mx-4 text-xs border-none outline-none text-bg"
           onChange={(e) => setDebouncedSearch((e.target as HTMLInputElement).value)}
           value={debouncedSearch}
         />
       </div>
-      <div className="relative flexBetween ml-4 sm:ml-0 sm:mt-2 min-w-190 cursor-pointer dark:bg-nft-black-2 bg-white border dark:border-nft-black-2 border-nft-gray-2 px-4 rounded-md py-3" onClick={() => setToggle((prevToogle) => !prevToogle)}>
-        <p className="font-poppins dark:text-white text-nft-black-1 font-normal text-xs">{activeSelect}</p>
+      <div className="relative px-4 py-3 ml-4 border rounded-md cursor-pointer flexBetween sm:ml-0 sm:mt-2 min-w-190 glowing-border" onClick={() => setToggle((prevToogle) => !prevToogle)}>
+        <p className="text-xs font-normal font-poppins dark:text-white">{activeSelect}</p>
         <Image
           src={images.arrow}
           objectFit="contain"
@@ -68,11 +68,11 @@ const SearchBar = ({ activeSelect, setActiveSelect, handleSearch, clearSearch }:
           className={theme === 'light' ? 'filter invert' : ''}
         />
         {toggle && (
-        <div className="absolute top-full left-0 right-0 w-full mt-3 z-10 dark:bg-nft-black-2 bg-white border dark:border-nft-black-2 border-nft-gray-2 py-3 px-4 rounded-md">
+        <div className="absolute left-0 right-0 z-10 w-full px-4 py-3 mt-3 border rounded-md glowing-border top-full">
           {activeSelectList.map((item, i) => (
             <p
               key={`${item}-${i}`}
-              className="font-poppins dark:text-white text-nft-black-1 font-normal text-xs my-3 cursor-pointer"
+              className="my-3 text-xs font-normal cursor-pointer font-poppins"
               onClick={() => setActiveSelect(item)}
             >{item}
             </p>

@@ -22,7 +22,7 @@
 }
 
 .bg-color {
-    background: #0c0a1d;
+background: linear-gradient(to right bottom, #2d2657, #262750, #212748, #1f273f, #1f2636, #1e2534, #1d2332, #1c2230, #1a2035, #191e39, #1a1b3c, #1d183f);
 }
 
 .gradient-border {
@@ -65,7 +65,7 @@
 
 .nft-card-style {
     box-sizing: border-box;
-    background: #131521;
+    background: rgba(16, 16, 16, 0.36);
     border: 1px solid rgb(46, 51, 92);
     box-shadow: rgb(151 164 175 / 10%) 0px 1px 10px;
     fill-opacity: 0.9;
@@ -73,6 +73,8 @@
     -webkit-transition: -webkit-transform,background 0.3s ease;
     transition: transform,background 0.3s ease;
     border-radius: 15px;
+    backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
 }
 
 .text-bg {
@@ -81,11 +83,13 @@
 }
 
 .creator-card {
-    background: #131521;
+    background: rgba(16, 16, 16, 0.36);
     border: 2px solid rgb(46, 51, 92);
     border-radius: 15px;
     box-shadow: rgba(164, 114, 214, 0.137) 0px 3px 10px;
     animation: spin 2.5s linear infinite;
+    backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
 }
 
 .glowing-border {
